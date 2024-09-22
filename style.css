@@ -329,16 +329,19 @@ body {
   
 /* Footer centré */
 .centered-signature {
-    display : flex ;
-    justify-content : center ;
     position: relative; 
+    left: 50%; 
     bottom: 0; 
-    width: 100%; 
+    transform: translateX(-50%); /* Centre horizontalement */
+    width: auto; /* Ajuste la largeur automatiquement */
     text-align: center; 
     color: #4F4F4F; 
     font-size: 14px; 
     background-color: #171717; 
-    padding: 10px 0; 
+    padding: 10px 20px; /* Ajoute un peu de padding horizontal */
+    display: flex; 
+    justify-content: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Optionnel : ajoute une ombre */
 }
 
 
