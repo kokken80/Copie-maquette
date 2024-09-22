@@ -1,0 +1,346 @@
+/* Style pour le fond de toute la page */
+body {
+    background-color: #171717; /* Fond noir */
+    color: #ffffff; /* Couleur du texte blanche pour le contenu */
+    font-family: 'Arial', sans-serif;
+    margin: 0; 
+    padding: 0; 
+}
+
+.name-gradient {
+    font-family: 'Arial', sans-serif;
+    font-size: 47px;
+}
+
+/* Style pour la barre de navigation */
+.navbar {
+    font-family: 'Arial', sans-serif;
+    font-size: 23px;
+    background-color: #171717 !important; 
+    margin: 0; /* Supprime toute marge autour de la navbar */
+    border: none; /* Supprime toute bordure */
+    padding: 0; 
+}
+
+/* Couleur du texte de la navbar */
+.navbar-nav .nav-link {
+    color: #ffffff; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #575757; /* Couleur au survol */
+}
+
+/* Contenu de la page */
+.container {
+    margin-top: 0; 
+    padding-top: 20px; 
+}
+
+/* Style pour le texte principal */
+.text-section h1 {
+    font-size: 48px; 
+    margin-bottom: 15px;
+}
+
+.text-section p {
+    font-size: 1.25rem; 
+    margin-bottom: 20px;
+    color: #828282; 
+}
+
+/* Style pour les boutons */
+.buttons .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+/* Bouton Download CV en vert */
+.btn-success {
+    background-color: #27ae60; 
+    border: none; 
+}
+
+/* Bouton Learn More avec bordure blanche */
+.btn-outline-light {
+    background-color: transparent; 
+    color: #ffffff; 
+    border: 1px solid #f2f2f2; 
+    transition: background-color 0.3s, color 0.3s; /* Effet de transition */
+}
+
+/* Effet au survol pour le bouton Learn More */
+.btn-outline-light:hover {
+    background-color: #ffffff; /* Fond blanc au survol */
+    color: #000000; /* Texte noir au survol */
+}
+
+/* Style pour l'image ronde */
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121; 
+    border-radius: 50%; 
+    padding: 10px; /* Espace pour le contour */
+    
+    width: 600px; 
+    height: 600px; 
+    overflow: hidden; 
+}
+
+/* Style pour l'image */
+.profile-image {
+    width: 100%; 
+    height: 100%; 
+    max-width: none; /* Supprime la limite de largeur */
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .image-section {
+        width: 200px; /* Ajuste la taille sur petits écrans */
+        height: 200px; /* Ajuste la taille sur petits écrans */
+    }
+}
+
+
+/* Style pour la section About */
+.text-center h2 {
+    font-size: 62px; 
+    margin-bottom: 15px; 
+}
+
+.text-center p {
+    font-size: 18px; 
+    color: #ffffff; 
+}
+
+/* Style pour les cercles */
+.circle {
+    width: 62px; 
+    height: 62px; 
+    border-radius: 50%; 
+    background-color: #212121; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Centre le cercle */
+}
+
+.inner-circle {
+    width: 12px; 
+    height: 12px; 
+    border-radius: 50%; 
+    background-color: #27ae60; 
+}
+
+/* Style pour le texte sous les cercles */
+.subtext {
+    margin-top: 4px; 
+    color: #ffffff; 
+    font-size: 23px; 
+}
+
+/* Mettre en gras la première ligne */
+.subtext strong {
+    font-size: 23px; /* Taille légèrement plus grande pour le gras */
+}
+
+.text-center h2 {
+    font-size: 2rem; 
+    color: #ffffff; 
+    margin-top: 60px; 
+    margin-bottom: 20px; 
+}
+
+.block-section {
+    width: 50%; /* Largeur à 50% de la page */
+    height: auto;
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    margin: 60px auto 0; /* Centre l'élément avec 60px en haut et auto sur les côtés */
+    flex-wrap: wrap; /* Permet aux blocs de passer à la ligne si nécessaire */
+}
+.block {
+    width: 280px; 
+    height: 220px; 
+    background-color: #212121; 
+    border-radius: 8px; 
+    padding: 60px 20px 20px 20px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    position: relative; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    flex: 1 1 250px; /* Permet à chaque bloc de se redimensionner */
+}
+
+.logo {
+    width: 57px; 
+    height: 46.47px; 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+}
+
+.block-title {
+    font-size: 36px; 
+    color: #535353; 
+    text-align: left; 
+    margin-top: 20px; 
+    margin-bottom: 0; 
+}
+
+/* Styles spécifiques pour chaque logo */
+.block1 .logo {
+    background-image: url('image/Capture.png'); 
+}
+
+.block2 .logo {
+    background-image: url('image/Capture-2.png'); 
+}
+
+.block3 .logo {
+    background-image: url('image/Capture-3.png'); 
+}
+
+/* Médias Queries pour le Responsive Design */
+@media (max-width: 768px) {
+    .block {
+        width: 60%; /* Prend toute la largeur de l'écran */
+        height: auto; /* Ajuste la hauteur automatiquement */
+        padding: 40px 10px; /* Réduit le padding */
+    }
+
+    .block-title {
+        font-size: 28px; /* Réduit la taille de la police */
+    }
+}
+
+@media (max-width: 480px) {
+    .block-title {
+        font-size: 24px; /* Réduit encore la taille de la police */
+    }
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 60px; 
+}
+
+.skills-box {
+    background-color: #212121; 
+    padding: 40px; 
+    border-radius: 1px #333333; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    display: flex; 
+    justify-content: space-around; 
+    width: 100%; 
+    max-width: 800px; 
+    flex-wrap: wrap; 
+    box-sizing: border-box; 
+    
+}
+
+.skill {
+    text-align: center; 
+    flex: 1 1 100px; 
+    margin: 10px;    
+}
+
+.percentage {
+    font-size: 72px; 
+    color: #4F4F4F; 
+    margin: 0; 
+}
+
+.skill-name {
+    font-size: 24px; 
+    color: #27ae60 !important; /* je ne sait pas pourquoi sans le !important le texte reste blanc */
+    font-weight: bold; 
+}
+
+.form-container {
+    background-color: #171717; 
+    padding: 20px; 
+    border-radius: 5px; 
+    max-width: 70%; 
+    margin: 0 auto; 
+}
+
+.form-input {
+    width: 100%; 
+    border: none; 
+    border-bottom: 1px solid #575757; 
+    background: transparent; 
+    color: #ffffff; 
+    padding: 10px 0; 
+    font-size: 14px; 
+}
+
+.form-input::placeholder {
+    color: #4F4F4F; 
+}
+
+.form-input:focus {
+    border-color: #ffffff;
+}
+
+
+
+.message-input {
+    width: 100%;
+    height: 150px; 
+    border: 1px solid #4f4f4f; /
+    background-color: transparent;
+    color: #ffffff;
+    outline: none;
+    padding: 10px;
+    resize: none; /
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Effet de survol et focus pour le champ de message */
+.message-input:focus {
+    border-color: #ffffff;
+}
+
+.custom-button {
+    background-color: #27ae60;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #28a745;
+    
+}
+  
+/* Footer centré */
+.centered-signature {
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    text-align: center; 
+    color: #4F4F4F; 
+    font-size: 14px; 
+    background-color: #171717; 
+    padding: 10px 0; 
+}
+
+
+
+
+
+
